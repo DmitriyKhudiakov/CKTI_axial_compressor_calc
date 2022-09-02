@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  table {
+    border: 4px double #333; /* Рамка вокруг таблицы */
+    border-collapse: separate; /* Способ отображения границы */
+    width: 100%; /* Ширина таблицы */
+    border-spacing: 7px 11px; /* Расстояние между ячейками */
+   }
+   td {
+    padding: 15px; /* Поля вокруг текста */
+    border: 5px solid #a52a2a; /* Граница вокруг ячеек */
+   }
+  body {
+  background-color: #F0F0F0;
+  }
+  .middle > * {
+  vertical-align: middle;
+}
+h1 {
+	font-family: Georgia;
+	font-size: 60pt;
+	}
+  h2 {
+	display: inline-block;
+  margin: 0;
+  text-align: middle;
+  font: bold 20px Sans-Serif;
+	}
+  span {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 16pt;
+	word-wrap: break-word;
+	float: left;
+	}
+	p {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 14pt;
+	word-wrap: break-word;
+	}
+	p1 {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 14pt;
+	text-align: top;
+	vertical-align: top;
+	}
+  img{
+  max-width: 100%;
+  width: auto \9;
+  height: auto;
+  vertical-align: top;
+ border: 0;
+  }
+
+  </style>
+ </head>
+ <body>
+ <center>
+     <h1>Второй поступенчатый расчет</h1><br>
+     <h2>Расчет геометрических параметров</h2><br>
+     <table border="1">
+         <caption>
+             <p>Результаты расчетов</p>
+         </caption>
+         <tr>
+             <th><p>Ступень</p></th>
+             <th>[[img = r_вт_rel]]</th>
+             <th>[[img_create = $\overline{r_{н}}$; r_н_rel; 14]]</th>
+             <th>[[img_create = $\overline{r_{ср}}$; r_ср_rel; 14]]</th>
+             <th>[[img_create = $b_{к}$; b_k; 14]]</th>
+             <th>[[img_create = $a_{вт.z1}$; az1вт; 14]]<br><p1>мм</p1></th>
+             <th>[[img_create = $a_{н.z1}$; az1н; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{ср.z1}$; az1ср; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{вт.z2}$; az2вт; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{н.z2}$; az2н; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{ср.z2}$; az2ср; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{вт.z3}$; az3вт; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{н.z3}$; az3н; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{ср.z3}$; az3ср; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{вт.z4}$; az4вт; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{н.z4}$; az4н; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $a_{ср.z4}$; az4ср; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{вт.z1}$; bz1вт; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{н.z1}$; bz1н; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{ср.z1}$; bz1ср; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{вт.z2}$; bz2вт; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{н.z2}$; bz2н; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{ср.z2}$; bz2ср; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{вт.z3}$; bz3вт; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{н.z3}$; bz3н; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{ср.z3}$; bz3ср; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{вт.z4}$; bz4вт; 14]] <br><p1>мм</p1></th>
+             <th>[[img_create = $b_{н.z4}$; bz4н; 14]]<br><p1>мм</p1></th>
+             <th>[[img_create = $b_{ср.z4}$; bz4ср; 14]]<br><p1>мм</p1></th>
+         </tr>
+         [[table_geom_1 = ]]
+     </table>
+     <br>
+     <table border="1">
+         <caption>
+             <p>Результаты расчетов</p>
+         </caption>
+         <tr>
+             <th><p>Ступень</p></th>
+             <th>[[img_create = $S_{r1}$; Sr1; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $S_{r2}$; Sr2; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $S_{r3}$; Sr3; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $S_{r4}$; Sr4; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $S_{z1}$; Sz1; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $S_{z2}$; Sz2; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $S_{z3}$; Sz3; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $S_{z4}$; Sz4; 14]]<br><p1>м</p1></th>
+         </tr>
+         [[table_geom_2 = ]]
+     </table>
+     <br>
+     <br>
+     <h2>Определение поправочных коэффициентов</h2><br>
+     </table>
+     <table border="1">
+         <caption>
+             <p>Результаты расчетов</p>
+         </caption>
+         <tr>
+             <th><p>Ступень</p></th>
+             <th>[[img_create = $D_{р}$; Dр; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $b$; b; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $b/D_{р}$; bDр; 14]]</th>
+             <th>[[img = l]]<br><p1>м</p1></th>
+             <th>[[img = l_rel]]</th>
+             <th>[[img_create = $S_{r}$; Sr; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $\overline{S_{r}}$; Sr_rel; 14]]</th>
+             <th>[[img_create = $k_{\psi з \overline{l}}$; k_psi_зl; 14]]</th>
+             <th>[[img_create = $k_{\eta з \overline{l}}$; k_eta_зl; 14]]</th>
+             <th>[[img_create = $k_{\psi z}$; k_psi_z; 14]]</th>
+             <th>[[img_create = $k_{\eta z}$; k_eta_z; 14]]</th>
+             <th>[[img_create = $k_{\psi м}$; k_psi_м; 14]]</th>
+             <th>[[img_create = $k_{\eta м}$; k_eta_м; 14]]</th>
+             <th>[[img = D_н]]<br><p1>м</p1></th>
+             <th>[[img_create = $\Delta \overline{r_{н}}$; drн_rel; 14]]</th>
+             <th>[[img = D_вт]]<br><p1>м</p1></th>
+             <th>[[img_create = $\Delta \overline{r_{вт}}$; drвт_rel; 14]]</th>
+             <th>[[img_create = $k_{\eta \Delta r_{вт}}$; k_eta_dr_вт; 14]]</th>
+             <th>[[img_create = $k_{\eta \Delta r_{н}}$; k_eta_dr_н; 14]]</th>
+             <th>[[img_create = $k_{\eta \Delta r}$; k_eta_dr; 14]]</th>
+             <th>[[img_create = $k_{\eta}$; k_eta; 14]]</th>
+             <th>[[img_create = $k_{\psi}^{'}$; k_psi_st; 14]]</th>
+         </tr>
+         [[table_coeff = ]]
+     </table>
+     <br>
+     <br>
+     <h2>Поступенчатый расчет</h2><br>
+     </table>
+     <table border="1">
+         <caption>
+             <p>Результаты расчетов</p>
+         </caption>
+         <tr>
+             <th><p>Ступень</p></th>
+             <th>[[img = p_f]]<br><p1>Па</p1></th>
+             <th>[[img = T_f]]<br><p1>К</p1></th>
+             <th>[[img = rho_f]]<br><p1>[[img = density]]</p1></th>
+             <th>[[img = F]]<br><p1>[[img = square]]</p1></th>
+             <th>[[img = cz_f]]<br><p1>[[img = velocity]]</p1></th>
+             <th>[[img = phi_f]]</th>
+             <th>[[img = up_st]]<br><p1>[[img = velocity]]</p1></th>
+             <th>[[img = psi]]</th>
+             <th>[[img = eta]]</th>
+             <th>[[img_create = $k_{\psi \Delta r_{вт}}$; k_psi_dr_вт; 14]]</th>
+             <th>[[img_create = $k_{\psi \Delta r_{н}}$; k_psi_dr_н; 14]]</th>
+             <th>[[img_create = $k_{\psi \Delta r}$; k_psi_dr; 14]]</th>
+             <th>[[img = k_psi_st]]</th>
+             <th>[[img_create = $k_{\psi}$; k_psi; 14]]</th>
+             <th>[[img = k_eta]]</th>
+             <th>[[img_create = $\psi_{р}$; psi_р; 14]]</th>
+             <th>[[img_create = $\eta_{р}$; eta_р; 14]]</th>
+             <th>[[img = H_f]]<br><p1>[[img = Press_en]]</p1></th>
+             <th>[[img = dTад_f]]<br><p1>К</p1></th>
+             <th>[[img = dT_f]]<br><p1>К</p1></th>
+             <th>[[img = Pi_f]]</th>
+             <th>[[img = p_з_f]]<br><p1>Па</p1></th>
+             <th>[[img = T_з_f]]<br><p1>К</p1></th>
+         </tr>
+         [[table_second_st = ]]
+     </table>
+     <br>
+     <br>
+     <br>
+     <br>
+ </center>
+ </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  table {
+    border: 4px double #333; /* Рамка вокруг таблицы */
+    border-collapse: separate; /* Способ отображения границы */
+    width: 100%; /* Ширина таблицы */
+    border-spacing: 7px 11px; /* Расстояние между ячейками */
+   }
+   td {
+    padding: 15px; /* Поля вокруг текста */
+    border: 5px solid #a52a2a; /* Граница вокруг ячеек */
+   }
+  body {
+  background-color: #F0F0F0;
+  }
+  .middle > * {
+  vertical-align: middle;
+}
+h1 {
+	font-family: Georgia;
+	font-size: 60pt;
+	}
+  h2 {
+	display: inline-block;
+  margin: 0;
+  text-align: middle;
+  font: bold 20px Sans-Serif;
+	}
+  span {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 16pt;
+	word-wrap: break-word;
+	float: left;
+	}
+	p {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 14pt;
+	word-wrap: break-word;
+	}
+	p1 {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 14pt;
+	text-align: top;
+	vertical-align: top;
+	}
+  img{
+  max-width: 100%;
+  width: auto \9;
+  height: auto;
+  vertical-align: top;
+ border: 0;
+  }
+
+  </style>
+ </head>
+ <body>
+ <center>
+     <h1>Определение статических давлений и статических температур а лопаточном аппарате</h1><br>
+     <table border="1">
+         <caption>
+             <p>Расчет статических давлений и температур в сечениях за рабочим колесом</p>
+         </caption>
+         <tr>
+             <th><p>Ступень</p></th>
+             <th>[[img = p_f]]<br><p1>Па</p1></th>
+             <th>[[img = T_f]]<br><p1>К</p1></th>
+             <th>[[img = D_вт]]<br><p1>м</p1></th>
+             <th>[[img = D_н]]<br><p1>м</p1></th>
+             <th>[[img = F]]<br><p1>[[img = square]]</p1></th>
+             <th>[[img_create = $D_{ср}$; D_ср; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $D_{р}$; D_р; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $\overline{r_{ср}}$; r_ср_rel; 14]]</th>
+             <th>[[img_create = $\alpha_{2z}$; alpha_2z; 14]]<br><p1>град.</p1></th>
+             <th>[[img_create = $cos(\alpha_{2z})$; cos_alpha_2z; 14]]</th>
+             <th>[[img_create = $q$; q; 14]]</th>
+             <th>[[img_create = $\pi$; pi; 14]]</th>
+             <th>[[img_create = $\tau$; tau; 14]]</th>
+             <th>[[img_create = $p$; p; 14]]<br><p1>Па</p1></th>
+             <th>[[img_create = $T$; T; 14]]<br><p1>К</p1></th>
+         </tr>
+         [[table_42 = ]]
+     </table>
+     <br>
+     <br>
+     <br>
+     <br>
+ </center>
+ </body>
+</html>

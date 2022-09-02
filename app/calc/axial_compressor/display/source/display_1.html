@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  table {
+    border: 4px double #333; /* Рамка вокруг таблицы */
+    border-collapse: separate; /* Способ отображения границы */
+    width: 100%; /* Ширина таблицы */
+    border-spacing: 7px 11px; /* Расстояние между ячейками */
+   }
+   td {
+    padding: 15px; /* Поля вокруг текста */
+    border: 5px solid #a52a2a; /* Граница вокруг ячеек */
+   }
+  body {
+  background-color: #F0F0F0;
+  }
+  .middle > * {
+  vertical-align: middle;
+}
+  h1 {
+	font-family: Georgia;
+	font-size: 60pt;
+	}
+  h2 {
+	display: inline-block;
+  margin: 0;
+  text-align: middle;
+  font: bold 20px Sans-Serif;
+	}
+  span {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 16pt;
+	word-wrap: break-word;
+	float: left;
+	}
+	p {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 14pt;
+	word-wrap: break-word;
+	}
+	p1 {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 14pt;
+	text-align: top;
+	vertical-align: top;
+	}
+  img{
+  max-width: 100%;
+  width: auto \9;
+  height: auto;
+  vertical-align: top;
+ border: 0;
+  }
+
+  </style>
+ </head>
+ <body>
+ <center>
+     <h1>Вариантный расчет лопаточнго аппарата осевого компрессора</h1><br>
+     <h2>Определение потерь по давлениям во всасывающем и нагнетательном патрубках</h2><br>
+     [[var_image = zetaВ]] [[img_create = $=$; equal; 14]] <p1>[[var = zetaВ]] </p1><br>
+     [[var_image = rhoВ*]] [[img = equal]] <p1>[[var = rhoВ*]] [[img_create = $\frac{кг}{м^{3}}$; density; 14]]</p1><br>
+     [[var_image = c1]] [[img = equal]] <p1>[[var = c1]] [[img_create = $\frac{м}{с}$; velocity; 14]]</p1><br>
+     [[var_image = dpВ*]] [[img = equal]] <p1>[[var = dpВ*]] Па</p1><br>
+     [[var_image = dpВ*]] [[img = equal]] <p1>[[var = dpВ*]] Па</p1><br>
+     [[var_image = zetaК]] [[img = equal]] <p1>[[var = zetaК]]</p1><br>
+     [[var_image = pК*]] [[img = equal]] <p1>[[var = pК*]] Па</p1><br>
+     [[var_image = TК*]] [[img = equal]] <p1>[[var = TК*]] К</p1><br>
+     [[var_image = rhoК*]] [[img = equal]] <p1>[[var = rhoК*]] [[img = density]]</p1><br>
+     [[var_image = cЛА]] [[img = equal]] <p1>[[var = cЛА]] [[img = velocity]]</p1><br>
+     [[var_image = dpК*]] [[img = equal]] <p1>[[var = dpК*]] Па</p1><br>
+    <h2>Определение адиабатного напора в лопаточном аппарате</h2><br>
+     [[var_image = p1*]] [[img = equal]] <p1>[[var = p1*]] Па</p1><br>
+     [[var_image = pЛА*]] [[img = equal]] <p1>[[var = pЛА*]] Па</p1><br>
+     [[var_image = ПЛА*]] [[img = equal]] <p1>[[var = ПЛА*]]</p1><br>
+     [[var_image = HЛА*]] [[img = equal]] <p1>[[var = HЛА*]] [[img_create = $\frac{Дж}{кг}$; Press_en; 14]]</p1><br>
+     <h2>Определение наружного диаметра лопаточного аппарата и окружной скорости ротора компрессора</h2><br>
+     [[var_image = phi1]] [[img = equal]] <p1>[[var = phi1]]</p1><br>
+     [[var_image = rвт]] [[img = equal]] <p1>[[var = rвт]]</p1><br>
+     [[var_image = Dн]] [[img = equal]] <p1>[[var = Dн]] м</p1><br>
+     [[var_image = uн]] [[img = equal]] <p1>[[var = uн]] [[img = velocity]]</p1><br>
+    <h2>Выбор степени реактивности ступени</h2><br>
+     [[var_image = OmegaТ]] [[img = equal]] <p1>[[var = OmegaТ]]</p1><br>
+     [[var_image = phi1]] [[img = equal]] <p1>[[var = phi1]]</p1><br>
+     [[var_image = etaСТ]] [[img = equal]] <p1>[[var = etaСТ]]</p1><br>
+     [[var_image = psi]] [[img = equal]] <p1>[[var = psi]]</p1><br>
+     <p1>тип ступени - [[type_st = ]]</p1><br>
+     <h2>Выбор закона распределения коэффициентов расхода по ступеням и типа проточной части:</h2><br>
+     <p1>закон распределения коэффициента расхода - [[law_flow_path = ]]</p1><br>
+     <p1>тип проточной части - [[type_flow_path = ]]</p1><br>
+     <h2>Определение числа ступеней компрессора:</h2><br>
+     [[var_image = Hср_ст*]] [[img = equal]] <p1>[[var = Hср_ст*]] [[img = Press_en]]</p1><br>
+     [[var_image = alpha]] [[img = equal]] <p1>[[var = alpha]] </p1><br>
+     [[var_image = HрЛА*]] [[img = equal]] <p1>[[var = HрЛА*]] [[img = Press_en]]</p1><br>
+     [[var_image = i]] [[img = equal]] <p1>[[var = i]] </p1><br>
+     [[var_image = i_int]] [[img = equal]] <p1>[[var = i_int]] шт.</p1><br>
+     <h2>Предварительное определение к.п.д. лопаточного аппарата:</h2><br>
+     [[var_image = a_help]] [[img = equal]] <p1>[[var = a_help]]</p1><br>
+     [[var_image = etaЛА]] [[img = equal]] <p1>[[var = etaЛА]]</p1><br>
+     <h2>Определение длины лопатки первой и последней ступеней:</h2><br>
+     [[var_image = Dн1]] [[img = equal]] <p1>[[var = Dн1]] м</p1><br>
+     [[var_image = Dвт1]] [[img = equal]] <p1>[[var = Dвт1]] м</p1><br>
+     [[var_image = l1]] [[img = equal]] <p1>[[var = l1]] м</p1><br>
+     [[var_image = rho1*]] [[img = equal]] <p1>[[var = rho1*]] [[img = density]]</p1><br>
+     [[var_image = rho_ЛА*]] [[img = equal]] <p1>[[var = rho_ЛА*]] [[img = density]]</p1><br>
+     [[var_image = Dвт2]] [[img = equal]] <p1>[[var = Dвт2]] м</p1><br>
+     [[var_image = Dн2]] [[img = equal]] <p1>[[var = Dн2]] м</p1><br>
+     [[var_image = l2]] [[img = equal]] <p1>[[var = l2]] м</p1><br>
+     [[var_image = dr_н]] [[img = equal]] <p1>[[var = dr_н]] </p1><br>
+     [[var_image = dr_вт]] [[img = equal]] <p1>[[var = dr_вт]] </p1><br>
+
+     <table border="1">
+         <caption>
+             <p>Результаты расчетов</p>
+         </caption>
+         <tr>
+             <th><p>Вариант</p></th>
+             <th><p>тип ст.</p></th>
+             <th><p>тип пр. части</p></th>
+             <th>[[var_image = rвт]]</th>
+             <th>[[var_image = Dн1]]<br><p1>м</p1></th>
+             <th>[[var_image = Dвт1]]<br><p1>м</p1></th>
+             <th>[[var_image = l1]]<br><p1>м</p1></th>
+             <th>[[var_image = uн]]<br><p1>м/c </p1></th>
+             <th>[[var_image = Dн2]]<br><p1>м</p1></th>
+             <th>[[var_image = Dвт2]]<br><p1>м</p1></th>
+             <th>[[var_image = l2]]<br><p1>м</p1></th>
+             <th>[[img_create = $\overline{r_{вт2}}$; rvt2; 14]]</th>
+             <th>[[var_image = i_int]]<br><p1>шт</p1></th>
+             <th>[[var_image = etaЛА]]</th>
+             <th>[[var_image = dr_вт]]</th>
+             <th>[[var_image = dr_н]]</th>
+         </tr>
+         [[table_var = ]]
+     </table>
+     <br>
+     <br>
+     <br>
+     <br>
+ </center>
+ </body>
+</html>

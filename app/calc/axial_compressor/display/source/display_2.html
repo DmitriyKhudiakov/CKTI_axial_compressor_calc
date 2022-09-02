@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+ <head>
+  <meta charset="utf-8">
+  <style type="text/css">
+  table {
+    border: 4px double #333; /* Рамка вокруг таблицы */
+    border-collapse: separate; /* Способ отображения границы */
+    width: 100%; /* Ширина таблицы */
+    border-spacing: 7px 11px; /* Расстояние между ячейками */
+   }
+   td {
+    padding: 15px; /* Поля вокруг текста */
+    border: 5px solid #a52a2a; /* Граница вокруг ячеек */
+   }
+  body {
+  background-color: #F0F0F0;
+  }
+  .middle > * {
+  vertical-align: middle;
+}
+  h1 {
+	font-family: Georgia;
+	font-size: 60pt;
+	}
+  h2 {
+	display: inline-block;
+  margin: 0;
+  text-align: middle;
+  font: bold 20px Sans-Serif;
+	}
+  span {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 16pt;
+	word-wrap: break-word;
+	float: left;
+	}
+	p {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 14pt;
+	word-wrap: break-word;
+	}
+	p1 {
+	font-family: serif, 'Times New Roman', Times;
+	font-size: 14pt;
+	text-align: top;
+	vertical-align: top;
+	}
+  img{
+  max-width: 100%;
+  width: auto \9;
+  height: auto;
+  vertical-align: top;
+ border: 0;
+  }
+
+  </style>
+ </head>
+ <body>
+ <center>
+     <h1>Первый поступенчатый расчет</h1><br>
+     <h2>Определение поправочных коэффициентов</h2><br>
+     [[img_create = $l_{ср}$; l_aver; 14]] [[img = equal]] <p1>[[var = l_aver]] м</p1><br>
+     [[img_create = $\Delta \overline{r_{н.ср}}$; drн_ср_rel; 14]] [[img = equal]] <p1>[[var = drн_ср_rel]] </p1><br>
+     [[img_create = $\Delta \overline{r_{вт.ср}}$; drвт_ср_rel; 14]] [[img = equal]] <p1>[[var = drвт_ср_rel]] </p1><br>
+     [[img_create = $b_{ср}$; b_aver; 14]] [[img = equal]] <p1>[[var = b_aver]] м</p1><br>
+     [[img_create = $\overline{l_{ср}}$; l_aver_rel; 14]] [[img = equal]] <p1>[[var = l_aver_rel]] </p1><br>
+     [[img_create = $S_{ср.1z}$; S1z_aver; 14]] [[img = equal]] <p1>[[var = S1z_aver]] м</p1><br>
+     [[img_create = $S_{ср.2z}$; S2z_aver; 14]] [[img = equal]] <p1>[[var =  S2z_aver]] м</p1><br>
+     [[img_create = $\overline{S_{ср.1z}}$; S1z_aver_rel; 14]] [[img = equal]] <p1>[[var = S1z_aver_rel]] </p1><br>
+     [[img_create = $\overline{S_{ср.2z}}$; S2z_aver_rel; 14]] [[img = equal]] <p1>[[var = S2z_aver_rel]] </p1><br>
+     [[img_create = $\overline{r_{ср}}$; Sr_aver_rel; 14]] [[img = equal]] <p1>[[var = Sr_aver_rel]] </p1><br>
+     [[img_create = $k_{\psi_{м}}$; k_psi_м; 14]] [[img = equal]] <p1>[[var = k_psi_м]] </p1><br>
+     [[img_create = $k_{\eta_{м}}$; k_eta_м; 14]] [[img = equal]] <p1>[[var = k_eta_м]] </p1><br>
+     [[img_create = $k_{\psi_{з\overline{l}}}$; k_psi_зl; 14]] [[img = equal]] <p1>[[var = k_psi_зl]] </p1><br>
+     [[img_create = $k_{\eta_{з\overline{l}}}$; k_eta_зl; 14]] [[img = equal]] <p1>[[var = k_eta_зl]] </p1><br>
+     [[img_create = $k_{\psi_{z}}$; k_psi_z; 14]] [[img = equal]] <p1>[[var = k_psi_z]] </p1><br>
+     [[img_create = $k_{\eta_{z}}$; k_eta_z; 14]] [[img = equal]] <p1>[[var = k_eta_z]] </p1><br>
+     [[img_create = $k_{\psi_{\Delta r_{вт}}}$; k_psi_dr_вт; 14]] [[img = equal]] <p1>[[var = k_psi_dr_вт]] </p1><br>
+     [[img_create = $k_{\psi_{\Delta r_{н}}}$; k_psi_dr_н; 14]] [[img = equal]] <p1>[[var = k_psi_dr_н]] </p1><br>
+     [[img_create = $k_{\eta_{\Delta r_{вт}}}$; k_eta_dr_вт; 14]] [[img = equal]] <p1>[[var = k_eta_dr_вт]] </p1><br>
+     [[img_create = $k_{\eta_{\Delta r_{н}}}$; k_eta_dr_н; 14]] [[img = equal]] <p1>[[var = k_eta_dr_н]] </p1><br>
+     [[img_create = $k_{\psi_{\Delta r}}$; k_psi_dr; 14]] [[img = equal]] <p1>[[var = k_psi_dr]] </p1><br>
+     [[img_create = $k_{\eta_{\Delta r}}$; k_eta_dr; 14]] [[img = equal]] <p1>[[var = k_eta_dr]] </p1><br>
+     [[img_create = $k_{\psi}$; k_psi; 14]] [[img = equal]] <p1>[[var = k_psi]] </p1><br>
+     [[img_create = $k_{\eta}$; k_eta; 14]] [[img = equal]] <p1>[[var = k_eta]] </p1><br>
+
+     <table border="1">
+         <caption>
+             <p>Результаты расчетов</p>
+         </caption>
+         <tr>
+             <th><p>Ступень</p></th>
+             <th>[[img_create = $p^{*}$; p_f; 14]]<br><p1>Па</p1></th>
+             <th>[[img_create = $T^{*}$; T_f; 14]]<br><p1>К</p1></th>
+             <th>[[img_create = $\rho^{*}$; rho_f; 14]]<br><p1>[[img = density]]</p1></th>
+             <th>[[img_create = $Q$; Q; 14]]<br><p1>[[img_create = $\frac{м^{3}}{с}$; Q_in_sec; 14]]</p1></th>
+             <th>[[img_create = $\phi^{*}$; phi_f; 14]]</th>
+             <th>[[img_create = $u_{р}$; up; 14]]<br><p1>[[img = velocity]]</p1></th>
+             <th>[[img_create = $c_{z}^{*}$; cz_f; 14]]<br><p1>[[img = velocity]]</p1></th>
+             <th>[[img_create = $u_{р}^{'}$; up_st; 14]]<br><p1>[[img = velocity]]</p1></th>
+             <th>[[img_create = $\psi$; psi; 14]]</th>
+             <th>[[img_create = $\eta$; eta; 14]]</th>
+             <th>[[img_create = $k_{\psi}$; k_psi; 14]]</th>
+             <th>[[img_create = $k_{\eta}$; k_eta; 14]]</th>
+             <th>[[img_create = $\psi_{р}$; psi_р; 14]]</th>
+             <th>[[img_create = $\eta_{р}$; eta_р; 14]]</th>
+             <th>[[img_create = $H^{*}$; H_f; 14]]<br><p1>[[img = Press_en]]</p1></th>
+             <th>[[img_create = $\Delta T_{ад}^{*}$; dTад_f; 14]]<br><p1>К</p1></th>
+             <th>[[img_create = $\Delta T^{*}$; dT_f; 14]]<br><p1>К</p1></th>
+             <th>[[img_create = $\Pi^{*}$; Pi_f; 14]]</th>
+             <th>[[img_create = $p_{з}^{*}$; p_з_f; 14]]<br><p1>Па</p1></th>
+             <th>[[img_create = $T_{з}^{*}$; T_з_f; 14]]<br><p1>К</p1></th>
+             <th>[[img_create = $F$; F; 14]]<br><p1>[[img_create = $м^{2}$; square; 14]]</p1></th>
+             <th>[[img_create = $D_{вт}$; D_вт; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $D_{н}$; D_н; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $\overline{r_{вт}}$; r_вт_rel; 14]]</th>
+             <th>[[img_create = $l$; l; 14]]<br><p1>м</p1></th>
+             <th>[[img_create = $\overline{l}$; l_rel; 14]]</th>
+         </tr>
+         [[table_first_st = ]]
+     </table>
+     <br>
+     <br>
+     <br>
+     <br>
+ </center>
+ </body>
+</html>
