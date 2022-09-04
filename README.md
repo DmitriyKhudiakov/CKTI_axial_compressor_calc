@@ -33,7 +33,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-Run visualization
+Run app
 ```bash
 main.py
 ```
